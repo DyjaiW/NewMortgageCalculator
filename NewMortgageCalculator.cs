@@ -25,12 +25,6 @@ namespace NewMortgageCalculator
            Math.Round((monthlyPayment - interestPayment), 2);
 
 
-        public double TotalLoan(float principalPayment, float interest)
-        {
-            return Math.Round((principalPayment + interest), 2);
-        }
-
-
         public double RemainingBalance(float previousBalance, float principalPayment)
         {
             return Math.Round((previousBalance - principalPayment), 2);
