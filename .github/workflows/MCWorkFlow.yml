@@ -20,7 +20,7 @@ jobs:
     - name: Test
       run: dotnet test NewMortgageCalculator/MortgageCalc.csproj --configuration Release /p:Version=${VERSION} --no-build
     - name: Pack
-      run: dotnet pack NewMortgageCalculator/MortgageCalc.csproj --configuration Release /p:Version=${VERSION} --no-build --output . -p:PackageID=Chinjia.MortgageCalculator
+      run: dotnet pack NewMortgageCalculator/MortgageCalc.csproj --configuration Release /p:Version=${VERSION} --no-build --output . -p:PackageID=dyjai.MortgageCalculator
     - name: Push
       run: dotnet nuget push dyjai.MortgageCalculator.${VERSION}.nupkg --source https://nuget.pkg.github.com/DyjaiW/index.json --api-key ${GITHUB_TOKEN}
       env:
