@@ -1,9 +1,9 @@
 using NewMortgageCalculator;
 
-namespace NewMortgageCalculatorTest
+namespace NewMortgageCalcTest
 {
     [TestClass]
-    public class MortgageCalculatorTest
+    public class NewMortgageCalcTest
     {
         [TestMethod]
         public void MonthlyPayment()

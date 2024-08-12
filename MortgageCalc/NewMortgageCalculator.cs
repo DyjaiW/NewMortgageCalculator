@@ -9,6 +9,7 @@ namespace NewMortgageCalculator
 {
     public class MortgageCalculator
     {
+        
 
         public double MonthlyPayment(int loanAmount, float loanRate, int months)
         {
